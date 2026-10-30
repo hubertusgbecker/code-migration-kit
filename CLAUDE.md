@@ -71,6 +71,17 @@ process when a prompt exists for the step.
 If these paths don't exist yet, the migration hasn't started: run
 `prompts/00-feasibility.md` first and stop at its verdict.
 
+## Documentation and branch workflow
+
+Write all repository documentation in simple English. Reply to the user in the
+language they use.
+
+All development goes through `development`. Every change starts on a feature
+branch and is merged into `development` through a pull request. Promote
+`development` to `main` only through a separate pull request. Never delete
+`development` or `main`. Both branches must remain protected. Do not push
+directly to either branch.
+
 ## Model guidance
 
 Token spend concentrates in loops; blast radius decides the tier, not task
